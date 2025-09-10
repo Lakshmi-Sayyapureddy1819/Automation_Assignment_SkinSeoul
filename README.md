@@ -11,8 +11,8 @@ This project is a data-driven, fully automated merchandising system for SkinSeou
 - `products.csv` - Mock skincare product analytics dataset.
 - `overrides.json` - Optional list of manually prioritized product names.
 - `product.py` - Main Python logic to filter, score, and rank best sellers.
-- `homepage_best_sellers.json` - Output file of top N ranked products (frontend ready).
-- `homepage_best_sellers.csv` - CSV output for reference/analytics.
+- `output.json` - Output file of top N ranked products (frontend ready).
+- `output.csv` - CSV output for reference/analytics.
 - `README.md` - This documentation file.
 - `assignment.pdf` - 2-page deliverable outlining rationale, logic, and a flow diagram.
 - `presentation.mp4` - (Optional/video) 2-minute explainer video.
@@ -25,7 +25,7 @@ This project is a data-driven, fully automated merchandising system for SkinSeou
 2. **Filtering**: Only considers products in stock (>=10 units) and with at least one sale last month.  
 3. **Scoring**: Ranks products using a weighted formula factoring in sales, popularity, brand tier, and profit margin.  
 4. **Manual Override Layer**: Any product in `overrides.json` is promoted to the top of the recommendations, enabling instant business control.  
-5. **Output**: Exports the top N products (default 10) to `homepage_best_sellers.json` (for the frontend) and `homepage_best_sellers.csv`.  
+5. **Output**: Exports the top N products (default 10) to `output.json` (for the frontend) and `output.csv`.  
 
 ---
 
@@ -72,8 +72,8 @@ This project is a data-driven, fully automated merchandising system for SkinSeou
    ```
 
 3. **Outputs**  
-   - `homepage_best_sellers.json` (Top N products for frontend carousel)  
-   - `homepage_best_sellers.csv` (For review/analytics)  
+   - `output.json` (Top N products for frontend carousel)  
+   - `output.csv` (For review/analytics)  
 
 ---
 
@@ -108,10 +108,4 @@ See `assignment.pdf` for the full automation process map.
 
 ---
 
-## Contact
 
-For questions or discussion, please reach out to **your.email@domain.com**.
-
----
-
-**Thank you for reviewing my solution!**
